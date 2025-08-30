@@ -15,6 +15,25 @@
       --cream: #fff8f0;
       --orange: #ff8c42;
     }
+/* Samosas Gallery */
+.samosa-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.samosa-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.samosa-gallery img:hover {
+  transform: scale(1.05);
+}
 
     * { 
       box-sizing: border-box; 
@@ -1019,7 +1038,17 @@
             <div class="play-button" onclick="playVideo()"></div>
             <!-- <span style="margin-left: 1rem; color: rgba(255,255,255,0.8);">Play Video</span> -->
           </div>
-        </div>
+        </div> 
+        <!-- Samosas Section -->
+<section class="samosas">
+  <h2 class="section-title">Our Samosas</h2>
+  <div class="samosa-gallery">
+    <img src="./images/samosa1.jpeg" alt="Samosa 1" loading="lazy">
+    <img src="./images/samosa2.jpeg" alt="Samosa 2" loading="lazy">
+    <!-- Add more samosa images here -->
+  </div>
+</section>
+
         <div class="hero-image">
           <img src="./images/cake6.jpeg" alt="Chocolate Delight cake with ganache topping" class="hero-cake-img" loading="lazy">
         </div>
@@ -1211,7 +1240,7 @@
           <div class="contact-icon">📍</div>
           <div>
             <h4>Location</h4>
-            <p>Nairobi, Kenya<br>Delivery available citywide</p>
+            <p>Nairobi, Kenya<br>Delivery available Countrywide</p>
           </div>
         </div>
 
